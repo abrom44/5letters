@@ -10,8 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was.
+        Guess the 5 letter word in 6 tries.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -69,7 +68,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           check out the code here
         </a>{' '}
       </p>
-
+<br>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Enjoying the game? Make sure to show your {' '}
         <a
