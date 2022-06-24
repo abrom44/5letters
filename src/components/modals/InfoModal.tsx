@@ -68,7 +68,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           check out the code here
         </a>{' '}
       </p>
-<br>
+      <br></br>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Enjoying the game? Make sure to show your {' '}
         <a
