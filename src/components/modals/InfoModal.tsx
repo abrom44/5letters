@@ -11,7 +11,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        change to show how close your guess was.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -21,9 +21,9 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           value="W"
           status="correct"
         />
-        <Cell value="E" />
         <Cell value="A" />
-        <Cell value="R" />
+        <Cell value="C" />
+        <Cell value="K" />
         <Cell value="Y" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
@@ -31,8 +31,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="M" />
+        <Cell value="E" />
         <Cell
           isRevealing={true}
           isCompleted={true}
@@ -40,7 +40,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           status="present"
         />
         <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="N" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter L is in the word but in the wrong spot.
@@ -61,10 +61,24 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         This is an open source version of the word guessing game we all know and
         love -{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://github.com/abrom44/5letters"
+          target="_blank"
+          rel="noreferrer noopener"
           className="underline font-bold"
         >
           check out the code here
+        </a>{' '}
+      </p>
+
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        Enjoying the game? Make sure to show your {' '}
+        <a
+          href="https://abrom.me/support"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="underline font-bold"
+        >
+          support!
         </a>{' '}
       </p>
     </BaseModal>
