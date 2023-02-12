@@ -72,7 +72,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Enjoying the game? Make sure to show your {' '}
         <a
-          href="https://abrom.me/support"
+          href="https://ko-fi.com/abrom"
           target="_blank"
           rel="noreferrer noopener"
           className="underline font-bold"
